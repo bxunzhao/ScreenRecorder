@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package net.yrom.screenrecorder;
+package com.ichongliang.recorder;
 
 import android.media.AudioFormat;
 import android.media.AudioRecord;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package net.yrom.screenrecorder;
+package com.ichongliang.recorder;
 
 import android.media.MediaCodecInfo;
 import android.media.MediaFormat;
@@ -26,8 +26,8 @@ import java.util.Objects;
  * @version 2017/12/3
  */
 public class VideoEncodeConfig {
-    final int width;
-    final int height;
+    public final int width;
+    public final int height;
     final int bitrate;
     final int framerate;
     final int iframeInterval;

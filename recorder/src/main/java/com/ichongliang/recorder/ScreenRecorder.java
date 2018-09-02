@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package net.yrom.screenrecorder;
+package com.ichongliang.recorder;
 
 import android.hardware.display.DisplayManager;
 import android.hardware.display.VirtualDisplay;
@@ -43,8 +43,8 @@ public class ScreenRecorder {
     private static final String TAG = "ScreenRecorder";
     private static final boolean VERBOSE = false;
     private static final int INVALID_INDEX = -1;
-    static final String VIDEO_AVC = MIMETYPE_VIDEO_AVC; // H.264 Advanced Video Coding
-    static final String AUDIO_AAC = MIMETYPE_AUDIO_AAC; // H.264 Advanced Audio Coding
+    public static final String VIDEO_AVC = MIMETYPE_VIDEO_AVC; // H.264 Advanced Video Coding
+    public static final String AUDIO_AAC = MIMETYPE_AUDIO_AAC; // H.264 Advanced Audio Coding
     private int mWidth;
     private int mHeight;
     private int mDpi;
@@ -123,7 +123,7 @@ public class ScreenRecorder {
         return mDstPath;
     }
 
-    interface Callback {
+    public interface Callback {
         void onStop(Throwable error);
 
         void onStart();
